@@ -3,7 +3,6 @@
 # puzzle prompt: https://adventofcode.com/2024/day/7
 
 from ...base import StrSplitSolution, answer
-import time
 
 # https://www.geeksforgeeks.org/python-merge-two-lists-alternatively/
 def countList(lst1, lst2):
@@ -56,24 +55,25 @@ class Solution(StrSplitSolution):
         total = 0
         processed = set()
         allCombinations = {}
+
+        # There are a number of possible combinations equal to 2^numOperators
+        # We can recursively generate all possible combitions of operators
+        #   to be tried later. Done once here to reduce unneeded operations
         for line in lines:
             numbers = line[1]
             numOperators = len(numbers)-1
             if numOperators not in processed:
                 combitions = self.generate_operators(numOperators, part2)
                 allCombinations[numOperators] = combitions
-                processed.add(numOperators)
+            processed.add(numOperators)
 
+        # For each line in the input, try all left to right combinations of operators
+        # Sum the lines that are valid
         for line in lines:
-            # For each line in the input, try all left to right combinations of operators
-            # Return true if any equal the desired value
             desiredValue = line[0]
             numbers = line[1]
             numOperators = len(numbers)-1
 
-            # There are a number of possible combinations equal to 2^numOperators
-            # We can recursively generate all possible combitions of operators
-            #   then try each one
             for combition in allCombinations[numOperators]:
                 equation  = countList(numbers, list(combition))
                 if self.process_equation(equation) == desiredValue:
