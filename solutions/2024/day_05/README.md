@@ -1,6 +1,6 @@
 # Day 5 (2024)
 
-`TITLE` ([prompt](https://adventofcode.com/2024/day/5))
+`Print Queue` ([prompt](https://adventofcode.com/2024/day/5))
 
 This script processes order rules and changes to determine the correct sequence of pages. It reads input from a file, parses the rules and changes, and then validates and corrects the order of pages based on the rules.
 

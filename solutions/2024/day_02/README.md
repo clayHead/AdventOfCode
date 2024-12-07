@@ -1,6 +1,6 @@
 # Day 2 (2024)
 
-`TITLE` ([prompt](https://adventofcode.com/2024/day/2))
+`Red-Nosed Reports` ([prompt](https://adventofcode.com/2024/day/2))
 
 Use this space for notes on the day's solution and to document what you've learned!
 

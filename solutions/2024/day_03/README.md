@@ -1,6 +1,6 @@
 # Day 3 (2024)
 
-`TITLE` ([prompt](https://adventofcode.com/2024/day/3))
+`Mull It Over` ([prompt](https://adventofcode.com/2024/day/3))
 
 Use this space for notes on the day's solution and to document what you've learned!
 

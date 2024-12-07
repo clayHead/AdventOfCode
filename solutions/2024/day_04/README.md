@@ -1,6 +1,6 @@
 # Day 4 (2024)
 
-`TITLE` ([prompt](https://adventofcode.com/2024/day/4))
+`Ceres Search` ([prompt](https://adventofcode.com/2024/day/4))
 
 TODO: This broke when running in this template rather than running via my original solution.
 
