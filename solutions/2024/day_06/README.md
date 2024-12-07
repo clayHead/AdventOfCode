@@ -17,3 +17,11 @@ This kind of sent me down a spiral where I just couldn't figure out how to fix m
 This lead my to look at other people's answers and try to find ways to tackle part 2. I found a good solution [here](https://github.com/WinslowJosiah/adventofcode/blob/main/aoc/2024/day06/__init__.py), thanks for the suggestions! I saw this user tracked the path of the guard with not only position, but direction. This was the key since finding a point where the guard is going the same direction on a tile they visited means they will loop.
 
 I still wanted to reuse my classes, so I went about modifying my code to fit this new approach. However, this got me slightly higher at 1952, and still correct for part 1. During the test, my code successfully gets the correct looping paths and amount, but when expanded fails. I am not sure. I will come back to this
+
+### Coming Back
+
+Thanks to [this](https://www.reddit.com/r/adventofcode/comments/1h8vq51/comment/m0vxnn1/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) comment on the AoC reddit. I realized my error. I wasn't accounting for cases where the guard has to turn multiple times to get to the next valid position. After re-working to implement this, it worked wonderfully.
+
+## Time
+
+Both parts ran in 41.504s 
